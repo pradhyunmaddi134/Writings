@@ -39,24 +39,6 @@
             z-index: 1;
         }
 
-        .back-link {
-            color: #e57a95;
-            text-decoration: none;
-            font-size: 0.95rem;
-            margin-bottom: 50px;
-            display: inline-block;
-            transition: all 0.3s;
-        }
-
-        .back-link::before {
-            content: '← ';
-        }
-
-        .back-link:hover {
-            color: #c44569;
-            transform: translateX(-5px);
-        }
-
         h1 {
             font-size: 2.8rem;
             margin-bottom: 15px;
@@ -69,6 +51,27 @@
             color: #e57a95;
             margin-bottom: 60px;
             font-size: 1.05rem;
+        }
+
+        .series-header {
+            margin-top: 60px;
+            margin-bottom: 30px;
+            padding: 20px;
+            background: rgba(196, 69, 105, 0.1);
+            border-left: 4px solid #e57a95;
+            border-radius: 4px;
+        }
+
+        .series-title {
+            font-size: 1.3rem;
+            color: #e57a95;
+            margin-bottom: 8px;
+            font-weight: bold;
+        }
+
+        .series-description {
+            color: #c4c4c4;
+            font-size: 0.95rem;
         }
 
         .writing-item {
@@ -150,14 +153,13 @@
 </head>
 <body>
     <div class="container">
-        <a href="index.html" class="back-link">home</a>
-        
         <h1>writings</h1>
         <p class="section-description">thoughts uncovering themselves</p>
 
+        <!-- STANDALONE ESSAYS -->
         <div class="writing-item">
             <div class="writing-title">
-                <a href="article-template.html">filling in one's shoes</a>
+                <a href="filling-in-ones-shoes.html">filling in one's shoes</a>
             </div>
             <div class="writing-meta">
                 nov 2025 · <span class="tag">identity</span> <span class="tag">growth</span>
@@ -169,39 +171,111 @@
 
         <div class="writing-item">
             <div class="writing-title">
-                <a href="#">why executive function apps miss the point</a>
+                <a href="contradictions.html">contradictions</a>
             </div>
             <div class="writing-meta">
-                oct 2025 · <span class="tag">tech</span> <span class="tag">neurodiversity</span>
+                nov 2025 · <span class="tag">neurodivergence</span> <span class="tag">embodiment</span>
             </div>
             <div class="writing-preview">
-                most productivity apps are built for neurotypical brains. after building teenbud and talking to hundreds of neurodivergent teens, i learned that the problem isn't motivation—it's working memory, task initiation, and emotional regulation.
+                precise mind, clumsy body. drawing borders, believing in none. compliant outwardly, resistant inside. craving overwhelm, overwhelmed by it. i don't reconcile these. they coexist.
+            </div>
+        </div>
+
+        <!-- SERIES: Oblivity -->
+        <div class="series-header" style="margin-top: 80px;">
+            <div class="series-title">oblivity: a three-part series</div>
+            <div class="series-description">on showing up imperfect, stepping into discomfort, and the protective obliviousness that lets me keep going</div>
+        </div>
+
+        <div class="writing-item">
+            <div class="writing-title">
+                <a href="oblivity-prologue.html">prologue</a>
+            </div>
+            <div class="writing-meta">
+                nov 2025 · <span class="tag">series introduction</span>
+            </div>
+            <div class="writing-preview">
+                this is a series about showing up imperfect. not as a philosophy i developed, but as a way of being i've stumbled into. an invitation to start before you're ready.
             </div>
         </div>
 
         <div class="writing-item">
             <div class="writing-title">
-                <a href="#">teaching english at a government school</a>
+                <a href="bekhauf-fearless.html">part 1: bekhauf (fearless)</a>
             </div>
             <div class="writing-meta">
-                sep 2025 · <span class="tag">education</span> <span class="tag">learning</span>
+                nov 2025 · <span class="tag">oblivity</span> <span class="tag">growth</span>
             </div>
             <div class="writing-preview">
-                what i learned from designing play-based curricula for 100+ students who'd never had consistent english instruction. turns out, games work better than grammar drills.
+                the charity show was called bekhauf—fearless. but i wasn't fearless. fear just attaches to different things for me. questioning authority, performing in a language i didn't speak, negotiating space as an outsider.
             </div>
         </div>
 
         <div class="writing-item">
             <div class="writing-title">
-                <a href="#">consciousness and the body problem</a>
+                <a href="stepping-into-discomfort.html">part 2: stepping into discomfort</a>
             </div>
             <div class="writing-meta">
-                aug 2025 · <span class="tag">philosophy</span> <span class="tag">science</span>
+                nov 2025 · <span class="tag">oblivity</span> <span class="tag">experience</span>
             </div>
             <div class="writing-preview">
-                reading merleau-ponty and trying to understand why embodiment might not just enable consciousness but constitute it. messy thoughts in progress.
+                i kept choosing situations that made me uncomfortable. school trips without devices, marketing to strangers, demonstrating products at career fairs. not because i enjoyed discomfort, but because i wanted something on the other side of it.
             </div>
         </div>
+
+        <div class="writing-item">
+            <div class="writing-title">
+                <a href="showing-up-always-anyways.html">part 3: showing up always, anyways</a>
+            </div>
+            <div class="writing-meta">
+                nov 2025 · <span class="tag">oblivity</span> <span class="tag">persistence</span>
+            </div>
+            <div class="writing-preview">
+                the first podcast episodes were rough. i published them anyway. teaching at a government school felt uncertain. i kept showing up. putting creative work out there takes courage. i did it regardless. this is what i've learned.
+            </div>
+        </div>
+
+        <div class="writing-item">
+            <div class="writing-title">
+                <a href="oblivity-epilogue.html">epilogue</a>
+            </div>
+            <div class="writing-meta">
+                nov 2025 · <span class="tag">series conclusion</span>
+            </div>
+            <div class="writing-preview">
+                i wish i could tell my sister—and anyone else who's waiting—that it's okay if someone finds you imperfect. the world doesn't need more perfect things. it needs more people willing to try, fail, adjust, and try again.
+            </div>
+        </div>
+
+        <!-- BOOK REVIEWS -->
+        <div class="series-header" style="margin-top: 80px;">
+            <div class="series-title">book reviews</div>
+        </div>
+
+        <div class="writing-item">
+            <div class="writing-title">
+                <a href="thinking-fast-and-slow.html">thinking, fast and slow</a>
+            </div>
+            <div class="writing-meta">
+                may 2024 · <span class="tag">review</span> <span class="tag">psychology</span>
+            </div>
+            <div class="writing-preview">
+                a sweltering afternoon. carpool ride. my friend talked about investing, believing in destiny and prospect. a sentence broke in from memory: "if you choose to delude yourself by accepting extreme predictions..." this is how i came back to kahneman's book.
+            </div>
+        </div>
+
+        <div class="writing-item">
+            <div class="writing-title">
+                <a href="when-breath-becomes-air.html">when breath becomes air</a>
+            </div>
+            <div class="writing-meta">
+                dec 2023 · <span class="tag">review</span> <span class="tag">mortality</span>
+            </div>
+            <div class="writing-preview">
+                death and life are the two poles we exist between. paul kalanithi's situation was a unique blend: certain death, but time to reconcile. he accepted his fate with grace, courage, and wisdom. this is what makes the book remarkable.
+            </div>
+        </div>
+
     </div>
 </body>
 </html>
